@@ -133,4 +133,42 @@ button:hover{
 }
 .artist img{
     width:100%;
+    object-fit: contain;
+}
+
+@media(max-width: 500px) {
+    /* Header styles */
+    header nav a {
+        font-size: 1.75rem;
+        padding: 0 0.5rem;
+    }
+    /* Title Section */
+    .title-container h1 {
+        font-size: 3rem;
+    }
+
+    .title-container div {
+        height: 40vh;
+    }
+
+    /* Artists Section */
+    .artists-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .artist {
+        width: 75%;
+    }
+
+    .artist img {
+        height: 15%;
+    }
+
+    .artist a {
+        font-size: 1.25rem;
+    }
+
+    .bio {
+        font-size: 0.65rem;
+    }
 }
